@@ -1,0 +1,232 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+}
+
+header {
+    background: linear-gradient(to right, #64b5f6, #81d4fa);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+    font-size: 22px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    font-size: 2.1em;
+    color: #b3e5fc;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero {
+    background: linear-gradient(135deg, #a5d8ff, #ccebff);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.hero-content {
+    max-width: 600px;
+    flex: 1 1 50%;
+}
+
+.hero-animation {
+    max-width: 400px;
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.cta-button {
+    background: linear-gradient(to right, #29b6f6, #03a9f4);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-button {
+    background: linear-gradient(to right, #66bb6a, #4caf50);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.course-button:hover {
+    transform: scale(1.05);
+}
+
+.ai-process-visual {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.learn-more-button {
+    background: linear-gradient(to right, #ffb74d, #ff9800);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.learn-more-button:hover {
+    transform: scale(1.05);
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background: linear-gradient(to right, #ab47bc, #9c27b0);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#contact-form button:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #e0f7fa;
+}
+
+.hero-image, .education-image, .ai-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.course-card img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.team-member img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .hero-animation {
+        flex: 1 1 100%;
+    }
+    .hero-animation {
+        margin-top: 2rem;
+    }
+}
