@@ -32,7 +32,7 @@ Welcome to **InnoSphere**, an innovative online education platform designed to e
 To run the project locally:
 
 ```bash
-git clone https://github.com/yourusername/innosphere.git
+git clone https://github.com/MindfulTechie-06/Innosphere.gi
 cd innosphere
 open index.html
 ```
