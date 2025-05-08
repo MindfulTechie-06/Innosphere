@@ -4,7 +4,7 @@ Welcome to **InnoSphere**, an innovative online education platform designed to e
 
 ## 🌐 Live Preview
 
-> Experience the platform: [Link to your deployed site or demo](#)
+> Experience the platform: [https://mindfultechie-06.github.io/Innosphere/](https://mindfultechie-06.github.io/Innosphere/)
 
 ---
 
